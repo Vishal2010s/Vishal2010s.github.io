@@ -20,7 +20,7 @@ Find its title inside a `<article class="project">` block. Edit the title, parag
 
 `data/projects.json` is a reference snapshot of the original projects, not a runtime data source. Editing it alone does not update the page. Keeping cards in HTML makes the work visible without JavaScript. If you update a URL, update the snapshot too to keep it useful as a reference.
 
-The original site has six projects and five supplied Streamlit demo URLs. All five have been preserved exactly. The Health Insurance Policy Assistant had an empty demo URL; its README and repository homepage did not provide one. Replace its `Demo link coming soon` span with a real anchor only when you have the correct address. Do not guess a Streamlit subdomain.
+All six projects now have Streamlit demo links. The five original URLs are preserved exactly; the Health Insurance Policy Assistant URL was supplied by the owner. Update a demo only with its verified address.
 
 ## 3. Add your résumé
 
@@ -46,7 +46,7 @@ The repository must be named **Vishal2010s.github.io**, without a trailing dot. 
 2. Open the repository's **Settings → Pages**.
 3. Under **Build and deployment**, choose **Deploy from a branch**, select **main** and **/(root)**, then **Save**. If the repository already uses a custom Pages Actions workflow, inspect that workflow before switching sources.
 4. Check the **Actions** tab for the Pages deployment result. Open the site after a successful deployment and refresh it.
-5. Test all five demo links, the sixth once supplied, GitHub links, mobile navigation and your résumé once added. A Streamlit wake-up/sign-in page does not prove that the app itself is healthy.
+5. Test all six demo links, GitHub links, mobile navigation and your résumé once added. A Streamlit wake-up/sign-in page does not prove that the app itself is healthy.
 
 If you see a 404, verify the exact repository name, selected branch/folder, root `index.html`, and successful Pages deployment. Relative asset paths allow this page to work locally and on Pages. GitHub Pages hosts the portfolio; the Python applications continue to run on Streamlit.
 
