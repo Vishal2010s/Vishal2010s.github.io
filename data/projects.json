@@ -1,1 +1,76 @@
-.gitkeep
+[
+  {
+    "title": "Health Insurance Policy Assistant",
+    "category": "Generative AI / RAG",
+    "description": "Policy question-answering with semantic retrieval and source-grounded responses.",
+    "skills": [
+      "Gemini",
+      "FAISS",
+      "LangChain",
+      "RAG"
+    ],
+    "repo": "Health-Insurance-Policy-Assistant-RAG-",
+    "demo": ""
+  },
+  {
+    "title": "Employee Job Acceptance Prediction",
+    "category": "Predictive Machine Learning",
+    "description": "Predictive modeling and interactive evaluation of employee job acceptance.",
+    "skills": [
+      "Python",
+      "XGBoost",
+      "SQL",
+      "Streamlit"
+    ],
+    "repo": "Employee-Job-Acceptance-Prediction-System",
+    "demo": "https://employee-job-acceptance-prediction-system-qw2kv8v95nnekwse2ple.streamlit.app/"
+  },
+  {
+    "title": "App User Behavior Segmentation",
+    "category": "Unsupervised Learning",
+    "description": "Discover user behavior groups through K-Means clustering and PCA.",
+    "skills": [
+      "K-Means",
+      "PCA",
+      "Scikit-learn"
+    ],
+    "repo": "App-User-Behavior-Segmentation",
+    "demo": "https://app-user-behavior-segmentation-w5ek3iwpckecrbkpftczkt.streamlit.app/"
+  },
+  {
+    "title": "Driver Drowsiness Detection",
+    "category": "Deep Learning",
+    "description": "Computer vision system analyzing eye closure and yawning to classify fatigue.",
+    "skills": [
+      "CNN",
+      "MobileNetV2",
+      "TensorFlow"
+    ],
+    "repo": "Driver-Drowsiness-Detection-Deep-Learning",
+    "demo": "https://driver-drowsiness-detection-deep-learning-yzmrwuurppunh6fxp8ar.streamlit.app/"
+  },
+  {
+    "title": "Global Seismic Trends",
+    "category": "Exploratory Data Analytics",
+    "description": "Interactive earthquake analysis and geographical trend exploration.",
+    "skills": [
+      "Python",
+      "EDA",
+      "Streamlit"
+    ],
+    "repo": "Global-Seismic-Trends-Earthquake-Data-Analysis",
+    "demo": "https://global-seismic-trends-earthquake-data-analysis-a2zsfdhyo5fevbi.streamlit.app/"
+  },
+  {
+    "title": "Online Food Delivery Analysis",
+    "category": "Business Analytics",
+    "description": "Analyze customer behavior, delivery performance and operational patterns.",
+    "skills": [
+      "Python",
+      "SQL",
+      "Analytics"
+    ],
+    "repo": "ONLINE_FOOD_DELIVERY_ANALYSIS",
+    "demo": "https://onlinefooddeliveryanalysis-ctte8xk2qdrndwyfnrula9.streamlit.app/"
+  }
+]

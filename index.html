@@ -1,397 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio of Vishal S — Credit Risk, Data Science, Machine Learning and GenAI.">
-  <title>Vishal S | Data Science Portfolio</title>
-
-  <style>
-    :root {
-      --bg: #080f20;
-      --card: #121f35;
-      --text: #edf3ff;
-      --muted: #a5b6d0;
-      --blue: #60a5fa;
-      --border: #263a56;
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a { color: inherit; text-decoration: none; }
-
-    .container {
-      max-width: 1120px;
-      margin: auto;
-      padding: 0 24px;
-    }
-
-    header {
-      background: #0b1529;
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav {
-      min-height: 70px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .logo { font-size: 20px; font-weight: 800; }
-    .logo span, .accent { color: var(--blue); }
-
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .nav-links a:hover, .card a:hover {
-      color: var(--blue);
-    }
-
-    .hero {
-      padding: 95px 0 85px;
-      background: radial-gradient(
-        ellipse at 70% 10%, #163869 0%, #080f20 60%
-      );
-    }
-
-    .eyebrow {
-      color: var(--blue);
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 2px;
-    }
-
-    h1 {
-      font-size: clamp(38px, 6vw, 65px);
-      line-height: 1.15;
-      margin: 15px 0;
-    }
-
-    h2 { font-size: 30px; margin-bottom: 12px; }
-
-    .hero p, .section-intro, .card p {
-      color: var(--muted);
-    }
-
-    .hero p { max-width: 700px; font-size: 18px; }
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 28px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #2563eb;
-      padding: 11px 19px;
-      border-radius: 8px;
-      font-weight: 700;
-      transition: background .2s;
-    }
-
-    .btn:hover { background: #1d4ed8; }
-
-    .btn-outline {
-      background: transparent;
-      border: 1px solid #5274a7;
-    }
-
-    .btn-outline:hover { background: #1b3354; }
-
-    section { padding: 65px 0; }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 24px;
-      transition: transform .2s, border-color .2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: var(--blue);
-    }
-
-    .card h3 { margin: 14px 0 8px; }
-
-    .category {
-      color: var(--blue);
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-      margin: 16px 0;
-    }
-
-    .tag {
-      background: #233653;
-      padding: 4px 9px;
-      border-radius: 5px;
-      font-size: 12px;
-      color: #d6e5fa;
-    }
-
-    .card-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      color: #93c5fd;
-      font-weight: 700;
-      font-size: 14px;
-    }
-
-    .about {
-      max-width: 850px;
-      color: var(--muted);
-    }
-
-    footer {
-      border-top: 1px solid var(--border);
-      text-align: center;
-      padding: 28px 15px;
-      color: var(--muted);
-    }
-
-    @media (max-width: 850px) {
-      .grid { grid-template-columns: repeat(2, 1fr); }
-    }
-
-    @media (max-width: 600px) {
-      .grid { grid-template-columns: 1fr; }
-      nav { padding: 15px 0; flex-wrap: wrap; }
-      .hero { padding: 65px 0; }
-      .nav-links { gap: 12px; font-size: 14px; }
-    }
-  </style>
+  <meta name="description" content="Vishal S — credit risk and financial analytics professional building practical data science, machine learning and generative AI applications.">
+  <meta name="theme-color" content="#090e14">
+  <title>Vishal S | Credit Risk, Data Science & GenAI</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
-
-<body>
-
-  <header>
-    <nav class="container">
-      <a class="logo" href="#">Vishal<span>.AI</span></a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="container navigation" aria-label="Main navigation">
+    <a class="logo" href="#top" aria-label="Vishal S home"><span class="logo-symbol" aria-hidden="true">V/</span> VISHAL S<span class="logo-dot">.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" hidden>Menu <span aria-hidden="true">＋</span></button>
+    <div class="nav-links" id="nav-links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a class="nav-contact" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a></div>
+  </nav></header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading"><div class="container hero-grid">
+      <div class="hero-copy"><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> CREDIT RISK · DATA SCIENCE · GenAI</p>
+      <h1 id="hero-heading">Turning data<br>into <span>decisions.</span></h1>
+      <p class="hero-intro">Hi, I’m <strong>Vishal S.</strong> I connect credit risk experience with practical machine learning and generative AI.</p>
+      <div class="buttons"><a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="button secondary" href="https://github.com/Vishal2010s" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a></div>
+      <p class="hero-note">From financial analysis to intelligent applications.</p></div>
+      <div class="signal-panel" aria-label="Illustration: domain knowledge, data and AI combine to support decisions" role="img">
+        <div class="panel-heading"><span><i aria-hidden="true"></i> THE DECISION LAYER</span><span aria-hidden="true">[ VS / 01 ]</span></div>
+        <svg class="signal-art" viewBox="0 0 480 300" aria-hidden="true"><defs><pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e303a" stroke-width=".7"/></pattern><radialGradient id="glow"><stop stop-color="#64edc0" stop-opacity=".18"/><stop offset="1" stop-color="#64edc0" stop-opacity="0"/></radialGradient></defs><rect width="480" height="300" fill="url(#grid)"/><circle cx="240" cy="150" r="150" fill="url(#glow)"/><g fill="none" stroke="#37565e"><ellipse cx="240" cy="150" rx="165" ry="61" transform="rotate(-30 240 150)"/><ellipse cx="240" cy="150" rx="165" ry="61" transform="rotate(30 240 150)"/><circle cx="240" cy="150" r="105" stroke-dasharray="3 8"/><path d="M70 215 240 150 405 85M80 85 240 150 400 215"/></g><path d="m240 93 53 30v59l-53 30-53-30v-59z" fill="#102b2a" stroke="#64edc0"/><path d="m187 123 53 31 53-31m-53 31v58m0-119v61" fill="none" stroke="#64edc0"/><g fill="#64edc0"><circle cx="82" cy="85" r="5"/><circle cx="400" cy="215" r="5"/><circle cx="405" cy="85" r="5"/><circle cx="70" cy="215" r="5"/></g><g fill="#b3c6cb" font-family="monospace" font-size="10"><text x="25" y="64">DOMAIN</text><text x="375" y="65">DATA</text><text x="28" y="244">MODELS</text><text x="365" y="244">INSIGHT</text></g></svg>
+        <div class="pipeline"><span>Understand</span><b aria-hidden="true">→</b><span>Build</span><b aria-hidden="true">→</b><span>Evaluate</span></div>
+        <p class="panel-caption">Business context. Analytical thinking. Applied AI.</p>
       </div>
-    </nav>
-  </header>
+    </div><div class="container hero-bottom"><span>A PORTFOLIO OF PRACTICAL APPLICATIONS</span><a href="#about">Discover the approach <span aria-hidden="true">↓</span></a></div></section>
 
-  <main>
-    <div class="hero">
-      <div class="container">
-        <div class="eyebrow">
-          Credit Risk | Data Science | GenAI
-        </div>
+    <section id="about" class="container section about-grid"><div><p class="eyebrow">01 / THE PERSPECTIVE</p><h2>Domain experience.<br><span class="muted-heading">A builder’s mindset.</span></h2></div><div class="about-copy"><p>I’m a Credit Risk and Financial Analytics professional with 11 years of experience in underwriting and risk assessment.</p><p>My portfolio brings that business perspective to Python, SQL, predictive analytics, machine learning and GenAI — with a focus on end-to-end workflows, model evaluation and interactive applications.</p><a class="text-link" href="#experience">Explore my background <span aria-hidden="true">↗</span></a></div></section>
 
-        <h1>
-          Hi, I'm <span class="accent">Vishal S.</span><br>
-          Turning Data into Decisions.
-        </h1>
+    <section id="projects" class="section project-section"><div class="container"><div class="section-heading"><div><p class="eyebrow">02 / SELECTED WORK</p><h2>Ideas, put into practice<span class="accent">.</span></h2></div><p>Explore the applications.<br>Look inside the code.</p></div>
+    <div class="project-grid"><article class="project">
+      <div class="project-top"><span class="project-number">01</span><span class="category">Generative AI / RAG</span></div>
+      <h3>Health Insurance Policy Assistant</h3><p>Policy question-answering with semantic retrieval and source-grounded responses.</p>
+      <ul class="tags" aria-label="Technologies"><li>Gemini</li><li>FAISS</li><li>LangChain</li><li>RAG</li></ul>
+      <div class="card-links"><span class="pending">Demo link coming soon</span><a class="source" href="https://github.com/Vishal2010s/Health-Insurance-Policy-Assistant-RAG-" target="_blank" rel="noopener noreferrer" aria-label="View Health Insurance Policy Assistant source (new tab)">Source <span aria-hidden="true">↗</span></a></div>
+    </article>
+<article class="project">
+      <div class="project-top"><span class="project-number">02</span><span class="category">Predictive Machine Learning</span></div>
+      <h3>Employee Job Acceptance Prediction</h3><p>Predictive modeling and interactive evaluation of employee job acceptance.</p>
+      <ul class="tags" aria-label="Technologies"><li>Python</li><li>XGBoost</li><li>SQL</li><li>Streamlit</li></ul>
+      <div class="card-links"><a href="https://employee-job-acceptance-prediction-system-qw2kv8v95nnekwse2ple.streamlit.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Employee Job Acceptance Prediction live demo (new tab)">Live demo <span aria-hidden="true">↗</span></a><a class="source" href="https://github.com/Vishal2010s/Employee-Job-Acceptance-Prediction-System" target="_blank" rel="noopener noreferrer" aria-label="View Employee Job Acceptance Prediction source (new tab)">Source <span aria-hidden="true">↗</span></a></div>
+    </article>
+<article class="project">
+      <div class="project-top"><span class="project-number">03</span><span class="category">Unsupervised Learning</span></div>
+      <h3>App User Behavior Segmentation</h3><p>Discover user behavior groups through K-Means clustering and PCA.</p>
+      <ul class="tags" aria-label="Technologies"><li>K-Means</li><li>PCA</li><li>Scikit-learn</li></ul>
+      <div class="card-links"><a href="https://app-user-behavior-segmentation-w5ek3iwpckecrbkpftczkt.streamlit.app/" target="_blank" rel="noopener noreferrer" aria-label="Open App User Behavior Segmentation live demo (new tab)">Live demo <span aria-hidden="true">↗</span></a><a class="source" href="https://github.com/Vishal2010s/App-User-Behavior-Segmentation" target="_blank" rel="noopener noreferrer" aria-label="View App User Behavior Segmentation source (new tab)">Source <span aria-hidden="true">↗</span></a></div>
+    </article>
+<article class="project">
+      <div class="project-top"><span class="project-number">04</span><span class="category">Deep Learning</span></div>
+      <h3>Driver Drowsiness Detection</h3><p>Computer vision system analyzing eye closure and yawning to classify fatigue.</p>
+      <ul class="tags" aria-label="Technologies"><li>CNN</li><li>MobileNetV2</li><li>TensorFlow</li></ul>
+      <div class="card-links"><a href="https://driver-drowsiness-detection-deep-learning-yzmrwuurppunh6fxp8ar.streamlit.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Driver Drowsiness Detection live demo (new tab)">Live demo <span aria-hidden="true">↗</span></a><a class="source" href="https://github.com/Vishal2010s/Driver-Drowsiness-Detection-Deep-Learning" target="_blank" rel="noopener noreferrer" aria-label="View Driver Drowsiness Detection source (new tab)">Source <span aria-hidden="true">↗</span></a></div>
+    </article>
+<article class="project">
+      <div class="project-top"><span class="project-number">05</span><span class="category">Exploratory Data Analytics</span></div>
+      <h3>Global Seismic Trends</h3><p>Interactive earthquake analysis and geographical trend exploration.</p>
+      <ul class="tags" aria-label="Technologies"><li>Python</li><li>EDA</li><li>Streamlit</li></ul>
+      <div class="card-links"><a href="https://global-seismic-trends-earthquake-data-analysis-a2zsfdhyo5fevbi.streamlit.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Global Seismic Trends live demo (new tab)">Live demo <span aria-hidden="true">↗</span></a><a class="source" href="https://github.com/Vishal2010s/Global-Seismic-Trends-Earthquake-Data-Analysis" target="_blank" rel="noopener noreferrer" aria-label="View Global Seismic Trends source (new tab)">Source <span aria-hidden="true">↗</span></a></div>
+    </article>
+<article class="project">
+      <div class="project-top"><span class="project-number">06</span><span class="category">Business Analytics</span></div>
+      <h3>Online Food Delivery Analysis</h3><p>Analyze customer behavior, delivery performance and operational patterns.</p>
+      <ul class="tags" aria-label="Technologies"><li>Python</li><li>SQL</li><li>Analytics</li></ul>
+      <div class="card-links"><a href="https://onlinefooddeliveryanalysis-ctte8xk2qdrndwyfnrula9.streamlit.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Online Food Delivery Analysis live demo (new tab)">Live demo <span aria-hidden="true">↗</span></a><a class="source" href="https://github.com/Vishal2010s/ONLINE_FOOD_DELIVERY_ANALYSIS" target="_blank" rel="noopener noreferrer" aria-label="View Online Food Delivery Analysis source (new tab)">Source <span aria-hidden="true">↗</span></a></div>
+    </article></div><p class="section-note">Demos open in a new tab. Streamlit apps may need a moment to wake up.</p></div></section>
 
-        <p>
-          Credit Risk and Financial Analytics professional
-          with 11 years of experience in underwriting and
-          risk assessment. Building practical Machine Learning,
-          Deep Learning and Generative AI solutions.
-        </p>
+    <section id="skills" class="container section"><div class="section-heading"><div><p class="eyebrow">03 / TOOLKIT</p><h2>The tools behind the work<span class="accent">.</span></h2></div><p>Skills reflected in my background<br>and portfolio projects.</p></div>
+    <div class="skills-grid"><article><span class="skill-icon" aria-hidden="true">[01]</span><h3>Risk & analytics</h3><p>Credit underwriting · Risk assessment · Financial analytics · Python · SQL · Exploratory data analysis</p></article><article><span class="skill-icon" aria-hidden="true">[02]</span><h3>Machine learning</h3><p>Scikit-learn · XGBoost · K-Means · PCA · TensorFlow · CNN · MobileNetV2</p></article><article><span class="skill-icon" aria-hidden="true">[03]</span><h3>AI & applications</h3><p>Gemini · LangChain · FAISS · RAG · Streamlit · Model evaluation</p></article></div></section>
 
-        <div class="buttons">
-          <a class="btn" href="#projects">Explore Projects</a>
-          <a class="btn btn-outline"
-             href="https://github.com/Vishal2010s"
-             target="_blank" rel="noopener noreferrer">
-            View GitHub
-          </a>
-        </div>
-      </div>
-    </div>
+    <section id="experience" class="container section experience-grid"><div><p class="eyebrow">04 / BACKGROUND</p><h2>Built on business<br>understanding.</h2><p class="section-intro">Bringing a financial risk perspective<br>to applied data science.</p></div><div class="experience-list"><article><span class="experience-label">PROFESSIONAL FOUNDATION</span><h3>Credit Risk & Financial Analytics</h3><p>11 years of experience in credit underwriting and risk assessment, providing the domain context for my analytical work.</p><p class="quiet">Detailed roles and career history will be added with my résumé.</p></article><article><span class="experience-label">PORTFOLIO PRACTICE</span><h3>Applied Data Science & GenAI</h3><p>Building projects across predictive modeling, user segmentation, computer vision, business analytics and retrieval-augmented generation.</p></article></div></section>
 
-    <section id="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <p class="about">
-          I combine enterprise credit underwriting experience
-          with Python, SQL, predictive analytics, machine
-          learning and GenAI. My portfolio demonstrates
-          end-to-end analytical workflows, model evaluation,
-          practical business insights and interactive
-          application deployment.
-        </p>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <h2>Featured Projects</h2>
-        <p class="section-intro">
-          Explore my deployed applications and source code.
-        </p>
-        <div class="grid" id="project-grid"></div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <h2>Let's Connect</h2>
-        <p class="section-intro">
-          Interested in Credit Risk Analytics, Data Science
-          and Machine Learning opportunities.
-        </p>
-        <a class="btn" href="https://github.com/Vishal2010s"
-           target="_blank" rel="noopener noreferrer">
-          GitHub Profile
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    © <span id="year"></span> Vishal S.
-    Built with HTML, CSS & JavaScript.
-  </footer>
-
-  <script>
-    const github = "https://github.com/Vishal2010s/";
-
-    const projects = [
-      {
-        title: "Health Insurance Policy Assistant",
-        category: "Generative AI / RAG",
-        description: "Policy question-answering with semantic retrieval and source-grounded responses.",
-        skills: ["Gemini", "FAISS", "LangChain", "RAG"],
-        repo: "Health-Insurance-Policy-Assistant-RAG-",
-        demo: ""
-      },
-      {
-        title: "Employee Job Acceptance Prediction",
-        category: "Predictive Machine Learning",
-        description: "Predictive modeling and interactive evaluation of employee job acceptance.",
-        skills: ["Python", "XGBoost", "SQL", "Streamlit"],
-        repo: "Employee-Job-Acceptance-Prediction-System",
-        demo: "https://employee-job-acceptance-prediction-system-qw2kv8v95nnekwse2ple.streamlit.app/"
-      },
-      {
-        title: "App User Behavior Segmentation",
-        category: "Unsupervised Learning",
-        description: "Discover user behavior groups through K-Means clustering and PCA.",
-        skills: ["K-Means", "PCA", "Scikit-learn"],
-        repo: "App-User-Behavior-Segmentation",
-        demo: "https://app-user-behavior-segmentation-w5ek3iwpckecrbkpftczkt.streamlit.app/"
-      },
-      {
-        title: "Driver Drowsiness Detection",
-        category: "Deep Learning",
-        description: "Computer vision system analyzing eye closure and yawning to classify fatigue.",
-        skills: ["CNN", "MobileNetV2", "TensorFlow"],
-        repo: "Driver-Drowsiness-Detection-Deep-Learning",
-        demo: "https://driver-drowsiness-detection-deep-learning-yzmrwuurppunh6fxp8ar.streamlit.app/"
-      },
-      {
-        title: "Global Seismic Trends",
-        category: "Exploratory Data Analytics",
-        description: "Interactive earthquake analysis and geographical trend exploration.",
-        skills: ["Python", "EDA", "Streamlit"],
-        repo: "Global-Seismic-Trends-Earthquake-Data-Analysis",
-        demo: "https://global-seismic-trends-earthquake-data-analysis-a2zsfdhyo5fevbi.streamlit.app/"
-      },
-      {
-        title: "Online Food Delivery Analysis",
-        category: "Business Analytics",
-        description: "Analyze customer behavior, delivery performance and operational patterns.",
-        skills: ["Python", "SQL", "Analytics"],
-        repo: "ONLINE_FOOD_DELIVERY_ANALYSIS",
-        demo: "https://onlinefooddeliveryanalysis-ctte8xk2qdrndwyfnrula9.streamlit.app/"
-      }
-    ];
-
-    const grid = document.getElementById("project-grid");
-
-    projects.forEach(project => {
-      const card = document.createElement("article");
-      card.className = "card";
-
-      const category = document.createElement("div");
-      category.className = "category";
-      category.textContent = project.category;
-
-      const title = document.createElement("h3");
-      title.textContent = project.title;
-
-      const description = document.createElement("p");
-      description.textContent = project.description;
-
-      const tags = document.createElement("div");
-      tags.className = "tags";
-
-      project.skills.forEach(skill => {
-        const tag = document.createElement("span");
-        tag.className = "tag";
-        tag.textContent = skill;
-        tags.appendChild(tag);
-      });
-
-      const links = document.createElement("div");
-      links.className = "card-links";
-
-      function addLink(label, url) {
-        const link = document.createElement("a");
-        link.textContent = label;
-        link.href = url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        links.appendChild(link);
-      }
-
-      addLink("GitHub →", github + project.repo);
-
-      if (project.demo) {
-        addLink("Live Demo →", project.demo);
-      }
-
-      card.append(category, title, description, tags, links);
-      grid.appendChild(card);
-    });
-
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </script>
-
-</body>
-</html>
+    <section id="contact" class="container section"><div class="contact-panel"><div><p class="eyebrow">05 / WHAT’S NEXT</p><h2>Let’s turn a question<br>into something useful<span class="accent">.</span></h2><p>Interested in Credit Risk Analytics, Data Science<br>and Machine Learning opportunities.</p></div><div class="contact-actions"><a class="button primary" href="https://github.com/Vishal2010s" target="_blank" rel="noopener noreferrer">Connect on GitHub <span aria-hidden="true">↗</span></a><span class="resume-placeholder">Résumé — coming soon</span><p class="quiet">Additional contact details will be added here.</p><!-- Add only your verified email / LinkedIn URL. See CUSTOMIZATION.md. --></div></div></section>
+  </main><footer class="container footer"><a class="logo" href="#top">VISHAL S<span class="logo-dot">.</span></a><p>© <span id="year">2026</span> Vishal S · Built with HTML, CSS & JavaScript</p><a href="#top">Back to top ↑</a></footer>
+</body></html>
