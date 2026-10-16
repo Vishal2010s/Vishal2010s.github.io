@@ -695,3 +695,24 @@ h1 {
 
 }
 
+
+/* Step 3: career details, education and verified contact links. */
+.experience-label { display:block; line-height:1.8; }
+.experience-resume { display:inline-block; margin-top:24px; }
+.role-context { color:var(--text)!important; }
+.education-section { border-top:1px solid var(--line); }
+.education-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; }
+.education-grid article { border-top:1px solid var(--line); padding-top:12px; }
+.education-grid h3 { font-size:17px; margin:18px 0 8px; }
+.education-grid p,.education-grid li { font-size:13px; color:var(--muted); }
+.education-grid ul { padding-left:18px; }
+.education-grid li + li { margin-top:12px; }
+.contact-actions { flex:0 0 270px; }
+.contact-panel>div:first-child { max-width:600px; }
+.contact-email { display:block; overflow-wrap:anywhere; font-size:12px; margin:12px 0 20px; color:var(--muted); }
+.social-links { display:flex; justify-content:center; gap:26px; margin-top:20px; font-size:13px; color:var(--accent); }
+@media(max-width:760px) {
+  .education-grid { grid-template-columns:1fr; gap:24px; }
+  .contact-actions { max-width:100%; }
+  .social-links { justify-content:flex-start; }
+}

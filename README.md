@@ -1,6 +1,6 @@
 # Vishal S — Professional portfolio
 
-A responsive dark portfolio for Credit Risk, Data Science, Machine Learning and GenAI. Built with HTML, CSS and vanilla JavaScript; no build dependencies.
+A responsive dark portfolio for Credit Risk Strategy, Analytics, Data Science and AI. Includes résumé-backed career history, education, certifications, verified contact links and a downloadable public résumé. Built with HTML, CSS and vanilla JavaScript; no build dependencies.
 
 Open `index.html` locally. See [CUSTOMIZATION.md](CUSTOMIZATION.md) for the step-by-step editing, résumé, contact and GitHub Pages guide.
 

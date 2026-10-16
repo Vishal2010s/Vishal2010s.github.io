@@ -1,4 +1,4 @@
-# Step 2 — Design and customization
+# Portfolio design and profile customization
 
 This portfolio uses plain HTML, CSS and a small amount of JavaScript. There is no installation or build step. Open `index.html` in your browser to preview it.
 
@@ -22,21 +22,25 @@ Find its title inside a `<article class="project">` block. Edit the title, parag
 
 All six projects now have Streamlit demo links. The five original URLs are preserved exactly; the Health Insurance Policy Assistant URL was supplied by the owner. Update a demo only with its verified address.
 
-## 3. Add your résumé
+## 3. Replace your résumé
 
 1. Save the final PDF as `assets/Vishal-S-Resume.pdf`.
-2. Find `<span class="resume-placeholder">Résumé — coming soon</span>`.
-3. Replace that span with:
+2. The experience and contact sections already link to that path, so replacing the file updates both download buttons.
+3. To add the same link elsewhere, use:
 
 ```html
 <a class="button secondary" href="assets/Vishal-S-Resume.pdf" download>Download résumé ↓</a>
 ```
 
-Preview the PDF and confirm the download before publishing. No broken PDF link is included in the current site.
+Preview the PDF and confirm the download before publishing. The current PDF is a concise public adaptation of the supplied résumé, using the owner's latest email. It omits the phone number, replaces the generic Streamlit dashboard with the portfolio URL, removes duplicated content and leaves out performance metrics and absolute hallucination claims. The original DOCX is unchanged and is not uploaded to this repository.
 
 ## 4. Add contact and career details
 
-The GitHub profile comes from the original page. No email, LinkedIn URL, employer, job dates or achievements have been invented. Add your verified email using `href="mailto:your-real-address"` and your exact LinkedIn URL when ready; replace the contact placeholder text. Add factual role titles, employer names and dates in the experience section. The 11-year experience statement was retained from the original page; review it before deployment.
+The email and LinkedIn URL were supplied by the owner. Experience, education and certifications come from the supplied résumé. The page focuses on credit risk strategy, underwriting, portfolio analytics and decisioning, with data science, AI/ML and GenAI project skills. Career ambitions are presented as target opportunities, not as previous job titles.
+
+To edit contact details, search for `mailto:` or the LinkedIn URL in `index.html`. To update career history, edit the `<article>` blocks inside `experience-list`. Education and certifications are in the `education` section. Keep résumé dates and website dates consistent. Update the 11+ years statement when appropriate; it is deliberately static rather than an automatically increasing counter.
+
+`https://share.streamlit.io/` is a general Streamlit dashboard, not an individual app URL. The six project cards retain their original individual demo URLs.
 
 ## 5. Deploy with GitHub Pages
 
@@ -46,7 +50,7 @@ The repository must be named **Vishal2010s.github.io**, without a trailing dot. 
 2. Open the repository's **Settings → Pages**.
 3. Under **Build and deployment**, choose **Deploy from a branch**, select **main** and **/(root)**, then **Save**. If the repository already uses a custom Pages Actions workflow, inspect that workflow before switching sources.
 4. Check the **Actions** tab for the Pages deployment result. Open the site after a successful deployment and refresh it.
-5. Test all six demo links, GitHub links, mobile navigation and your résumé once added. A Streamlit wake-up/sign-in page does not prove that the app itself is healthy.
+5. Test all six demo links, GitHub/LinkedIn links, email link, mobile navigation and résumé download. A Streamlit wake-up/sign-in page does not prove that the app itself is healthy.
 
 If you see a 404, verify the exact repository name, selected branch/folder, root `index.html`, and successful Pages deployment. Relative asset paths allow this page to work locally and on Pages. GitHub Pages hosts the portfolio; the Python applications continue to run on Streamlit.
 
